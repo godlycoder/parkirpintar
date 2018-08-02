@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/head_color">
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textSize="32px"
+                android:textColor="#FFFFFF"
+                android:text="SILAHKAN BAYAR"/>
+
+            <ImageView
+                android:layout_width="150px"
+                android:layout_height="150px"
+                android:layout_marginTop="19.4px"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/coin_white"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_detail"
+            android:layout_below="@id/head_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14px"
+            android:textColor="#FFFFFF"
+            android:textSize="18px"
+            android:fontFamily="@font/biryani_extrabold"
+            android:text="Rincian"/>
+
+        <LinearLayout
+            android:id="@+id/detail_layout"
+            android:layout_below="@+id/tv_detail"
+            android:layout_centerHorizontal="true"
+            android:layout_width="324.8px"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/biryani_semibold"
+                    android:text="Biaya Parkir"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/biryani_semibold"
+                    android:text="No. Polisi"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100.8px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_parking_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/biryani_light"
+                    android:text=""/>
+
+                <TextView
+                    android:id="@+id/tv_number_vechicle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16px"
+                    android:textColor="#FFFFFF"
+                    android:fontFamily="@font/biryani_light"
+                    android:text=""/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/detail_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35.3px"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/biryani_bold"
+                android:textSize="14px"
+                android:textColor="#FFFFFF"
+                android:text="TOTAL BAYAR"/>
+
+            <RelativeLayout
+                android:layout_width="376px"
+                android:layout_height="73.4px"
+                android:background="@drawable/rounded_layout">
+
+                <TextView
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="29px"
+                    android:fontFamily="@font/biryani_extrabold"
+                    android:text="--"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bt_cancle_reserve"
+        android:layout_below="@+id/main_head_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33px"
+        android:layout_width="413px"
+        android:layout_height="70px"
+        android:background="@drawable/rounded_button">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/biryani_extrabold"
+            android:text="KONFIRMASI"/>
+    </RelativeLayout>
+
+</RelativeLayout>

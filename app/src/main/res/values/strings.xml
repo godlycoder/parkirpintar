@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ParkirPintar</string>
+
+    <string name="time_prompt">Pilih lama reservasi</string>
+    <string name="note_parked">Layanan parkir akan berakhir jika kendaraan keluar dari blok parkir</string>
+    <string name="note_not_park">Anda belum menempati tempat parkir. Coba cari tempat parkir kembali</string>
+
+    <string-array name="time_array">
+        <item>30 Menit</item>
+        <item>1 Jam</item>
+        <item>2 Jam</item>
+    </string-array>
+
+    <string-array name="select_item">
+        <item>Reservasi</item>
+        <item>Parkir Sekarang</item>
+    </string-array>
+</resources>

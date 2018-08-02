@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/head_color"
+    android:id="@+id/parked_layout">
+
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="332px"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="26px"
+            android:fontFamily="@font/biryani_extralight"
+            android:text="KENDARAAN TERPARKIR"/>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="206.5px"
+            android:layout_height="166px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/parked"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="206px"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38px"
+            android:background="@drawable/rounded_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12.6px"
+                android:textSize="22px"
+                android:fontFamily="@font/biryani_bold"
+                android:textColor="#FFFFFF"
+                android:text="Masuk"/>
+
+            <TextView
+                android:id="@+id/tv_park_entered"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textColor="#FFFFFF"
+                android:text="--:--"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="22px"
+                android:fontFamily="@font/biryani_bold"
+                android:textColor="#FFFFFF"
+                android:text="Estimasi Parkir"/>
+
+            <TextView
+                android:id="@+id/tv_estimate_parked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12.6px"
+                android:layout_gravity="center_horizontal"
+                android:textSize="16px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textColor="#FFFFFF"
+                android:text="--"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25px"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16px"
+            android:fontFamily="@font/biryani_extralight"
+            android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:text="@string/note_parked"/>
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reserve_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_head_layout"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        android:background="@color/head_color">
+        
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textSize="40px"
+                android:textColor="#FFFFFF"
+                android:text="RESERVASI"/>
+            
+            <ImageView
+                android:layout_width="162px"
+                android:layout_height="162px"
+                android:layout_marginTop="19.4px"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/hourglass_white"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_below="@+id/head_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="222px"
+            android:layout_height="162px"
+            android:layout_marginTop="70px"
+            android:background="@drawable/rounded_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12.6px"
+                android:textSize="26px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textColor="#FFFFFF"
+                android:text="Sisa Waktu"/>
+
+            <TextView
+                android:id="@+id/tv_time_remains_reserve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="32px"
+                android:fontFamily="@font/biryani_extrabold"
+                android:textColor="#FFFFFF"
+                android:text="--:--"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/bt_cancle_reserve"
+        android:layout_below="@+id/main_head_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="33px"
+        android:layout_width="413px"
+        android:layout_height="70px"
+        android:background="@drawable/rounded_button">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22px"
+            android:textColor="#FFFFFF"
+            android:fontFamily="@font/biryani_extrabold"
+            android:text="BATAL RESERVASI"/>
+    </RelativeLayout>
+
+</RelativeLayout>

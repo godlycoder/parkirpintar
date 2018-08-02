@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "140154561975",
+    "firebase_url": "https://parkirpintar-e2469.firebaseio.com",
+    "project_id": "parkirpintar-e2469",
+    "storage_bucket": "parkirpintar-e2469.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140154561975:android:fdd5427de3d568cf",
+        "android_client_info": {
+          "package_name": "com.example.ribani.parkirpintar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140154561975-q5p3e3h58j2kmp6ogc3sge7jcmsh45up.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "140154561975-q5p3e3h58j2kmp6ogc3sge7jcmsh45up.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7A5Zm7hjhEt4joWjVCmaePQdwpRkyBNU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

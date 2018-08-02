@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/taking_place_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/head_color">
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="38px"
+            android:fontFamily="@font/biryani_extralight"
+            android:text="SILAHKAN PARKIR"/>
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="250px"
+            android:layout_height="250px"
+            android:layout_marginTop="40px"
+            android:src="@drawable/remaining"/>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:layout_width="222px"
+            android:layout_height="162px"
+            android:layout_marginTop="70px"
+            android:background="@drawable/rounded_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12.6px"
+                android:textSize="26px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textColor="#FFFFFF"
+                android:text="Sisa Waktu"/>
+
+            <TextView
+                android:id="@+id/tv_time_remains_taking"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textSize="40px"
+                android:fontFamily="@font/biryani_extrabold"
+                android:textColor="#FFFFFF"
+                android:text="--:--"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
