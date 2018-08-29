@@ -27,11 +27,32 @@
                 android:text="RESERVASI"/>
             
             <ImageView
-                android:layout_width="162px"
-                android:layout_height="162px"
+                android:layout_width="100px"
+                android:layout_height="120px"
                 android:layout_marginTop="19.4px"
                 android:layout_gravity="center_horizontal"
                 android:src="@drawable/hourglass_white"/>
+
+            <TextView
+                android:layout_marginTop="20px"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="24px"
+                android:fontFamily="@font/biryani_extralight"
+                android:text="Blok Parkir"/>
+
+            <TextView
+                android:id="@+id/tv_blok_reserved"
+                android:layout_marginTop="20px"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:textSize="24px"
+                android:fontFamily="@font/biryani_bold"
+                android:text="--"/>
         </LinearLayout>
         
         <LinearLayout
@@ -39,7 +60,7 @@
             android:layout_centerHorizontal="true"
             android:layout_width="222px"
             android:layout_height="162px"
-            android:layout_marginTop="70px"
+            android:layout_marginTop="15px"
             android:background="@drawable/rounded_layout"
             android:orientation="vertical">
 

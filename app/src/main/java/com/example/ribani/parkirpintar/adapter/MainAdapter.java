@@ -25,6 +25,7 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
 
     private List<MainItem> itemList = new ArrayList<>();
     private Context mContext;
+
     private CustomItemClickListener clickListener;
 
     public MainAdapter(Context mContext, List<MainItem> itemList, CustomItemClickListener clickListener) {
@@ -46,6 +47,22 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         MainItem mainItem = itemList.get(position);
         holder.tvBlockItem.setText(mainItem.getNamaBlok());
         holder.tvNoteItem.setText(mainItem.dirStatus());
+        if (mainItem.getReserved() != null ) {
+            holder.timeRemainsLayout.setVisibility(View.VISIBLE);
+            holder.tvRemainsTimeItem.setText(getTimeEstimate(mainItem.getReserved().getReserveEst()));
+        }
+        Log.d("MainAdapter", String.valueOf(mainItem.getReserved()==null));
+
+        holder.getStatus(mainItem.getStatus());
+        holder.getPark(mainItem.getPark());
+    }
+
+    private String getTimeEstimate(int reserveEst) {
+        if (reserveEst >= 60) {
+            return (reserveEst/60)+" jam lagi";
+        } else {
+            return reserveEst+" menit lagi";
+        }
     }
 
     @Override
@@ -60,6 +77,9 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
         @BindView(R.id.tv_remains_time_item) TextView tvRemainsTimeItem;
         @BindView(R.id.time_remains_layout) LinearLayout timeRemainsLayout;
 
+        int status;
+        String park;
+
         public MainViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
@@ -67,9 +87,17 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.MainViewHolder
             itemView.setOnClickListener(this);
         }
 
+        private void getStatus(int status) {
+            this.status = status;
+        }
+
+        private void getPark(String park) {
+            this.park = park;
+        }
+
         @Override
         public void onClick(View v) {
-            clickListener.onItemClick(v, tvBlockItem.getText().toString().trim());
+            clickListener.onItemClick(v, park, tvBlockItem.getText().toString().trim(), status);
         }
     }
 }

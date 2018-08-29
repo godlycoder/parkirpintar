@@ -7,35 +7,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 
-import com.example.ribani.parkirpintar.Preferences;
 import com.example.ribani.parkirpintar.R;
-import com.example.ribani.parkirpintar.feature.landing.LandingActivity;
 import com.example.ribani.parkirpintar.feature.main.MainActivity;
 import com.example.ribani.parkirpintar.feature.response.ResponseActivity;
-import com.orhanobut.hawk.Hawk;
-import com.orhanobut.hawk.NoEncryption;
 
-public class SplashActivity extends AppCompatActivity {
+public class BridgeActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-
-        Hawk.init(this).setEncryption(new NoEncryption()).build();
+        setContentView(R.layout.activity_bridge);
 
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                if (Preferences.getUid()!=null) {
-                    startActivity(new Intent(SplashActivity.this, BridgeActivity.class));
+                SharedPreferences prefs = getSharedPreferences("X", MODE_PRIVATE);
+                String flag = prefs.getString("killed", null);
+
+                if(flag!=null && flag.equals("yes")) {
+                    Intent notifyIntent = new Intent(BridgeActivity.this, ResponseActivity.class);
+                    startActivity(notifyIntent);
+                    Log.d("onDoing", "I'm on good refered!");
                 } else {
-                    startActivity(new Intent(SplashActivity.this, LandingActivity.class));
+                    startActivity(new Intent(BridgeActivity.this, MainActivity.class));
                 }
 
                 finish();
+
             }
-        }, 500L);
+        }, 200L);
+
+
     }
 }

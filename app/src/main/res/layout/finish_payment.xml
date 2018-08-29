@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/finish_payment_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/head_color">
+
+    <RelativeLayout
+        android:id="@+id/main_head_layout"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/head_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textSize="32px"
+                android:layout_gravity="center_horizontal"
+                android:textColor="#FFFFFF"
+                android:text="SELESAI"/>
+
+            <ImageView
+                android:layout_marginTop="30px"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_circular_check_button"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36px"
+                android:layout_marginHorizontal="30px"
+                android:fontFamily="@font/biryani_extralight"
+                android:textSize="20px"
+                android:layout_gravity="center_horizontal"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:text="Terimakasih sudah menggunakan layanan kami"/>
+
+
+            <RelativeLayout
+                android:id="@+id/bt_finish"
+                android:layout_below="@+id/main_head_layout"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="30px"
+                android:layout_width="343px"
+                android:layout_height="70px"
+                android:background="@drawable/rounded_white_button">
+
+                <ProgressBar
+                    android:id="@+id/pb_signup_btn"
+                    android:layout_margin="15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/blue_progress_bar"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_finish_btn"
+                    android:layout_centerInParent="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22px"
+                    android:textColor="@color/head_color"
+                    android:fontFamily="@font/biryani_extrabold"
+                    android:text="Selesai"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

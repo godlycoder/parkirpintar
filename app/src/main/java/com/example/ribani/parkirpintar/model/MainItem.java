@@ -9,9 +9,17 @@ public class MainItem {
 
     public static final String BLOCK = "BLOCK";
 
-    String namaBlok;
+    String namaBlok, park;
     int status;
-    Reserved reserved;
+    Reserved res;
+
+    public String getPark() {
+        return park;
+    }
+
+    public void setPark(String park) {
+        this.park = park;
+    }
 
     public String getNamaBlok() {
         return namaBlok;
@@ -30,11 +38,11 @@ public class MainItem {
     }
 
     public Reserved getReserved() {
-        return reserved;
+        return res;
     }
 
-    public void setReserved(Reserved reserved) {
-        this.reserved = reserved;
+    public void setReserved(Reserved res) {
+        this.res = res;
     }
 
     public String dirStatus() {
@@ -46,13 +54,6 @@ public class MainItem {
             default :
                 return "";
         }
-    }
-
-    public static Intent starter(Context mContext, String block) {
-        Intent detailIntent = new Intent(mContext, ReserveActivity.class);
-        detailIntent.putExtra(BLOCK, block);
-
-        return detailIntent;
     }
 
 }

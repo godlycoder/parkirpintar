@@ -66,16 +66,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/et_num_police"
-                android:layout_width="343px"
-                android:layout_height="wrap_content"
-                android:textSize="14px"
-                android:fontFamily="@font/biryani_extralight"
-                android:hint="No. Polisi Kendaraan"
-                android:textColorHint="@color/head_color"
-                android:backgroundTint="@color/head_color"
-                />
+
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -85,13 +76,13 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="14px"
+                    android:textSize="18px"
                     android:text="Lama Reservasi"
                     android:textColor="@color/head_color"/>
 
                 <Spinner
                     android:id="@+id/sp_time_reserve"
-                    android:layout_width="wrap_content"
+                    android:layout_width="280px"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@color/head_color"
                     android:prompt="@string/time_prompt">
@@ -139,13 +130,6 @@
                         android:fontFamily="@font/biryani_semibold"
                         android:text="Blok Kendaraan"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16px"
-                        android:textColor="@color/head_color"
-                        android:fontFamily="@font/biryani_semibold"
-                        android:text="No. Polisi"/>
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -167,23 +151,17 @@
                         android:id="@+id/tv_detail_block_reserve"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16px"
+                        android:textSize="18px"
                         android:textColor="@color/head_color"
                         android:fontFamily="@font/biryani_light"
                         android:text="--"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="16px"
-                        android:textColor="@color/head_color"
-                        android:fontFamily="@font/biryani_light"
-                        android:text=""/>
 
                     <TextView
+                        android:id="@+id/tv_detail_time_reserve"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textSize="16px"
+                        android:textSize="18px"
                         android:textColor="@color/head_color"
                         android:fontFamily="@font/biryani_light"
                         android:text=""/>
@@ -197,10 +175,20 @@
                 android:layout_below="@+id/detail_layout"
                 android:layout_width="344px"
                 android:layout_height="78px"
-                android:layout_marginTop="86.8px"
+                android:layout_marginTop="40px"
                 android:background="@drawable/rounded_button">
 
+                <ProgressBar
+                    android:id="@+id/pb_reserve_btn"
+                    android:layout_margin="15px"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:indeterminateDrawable="@drawable/white_progress_bar"
+                    android:visibility="gone"/>
+
                 <TextView
+                    android:id="@+id/tv_reserve_btn"
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"

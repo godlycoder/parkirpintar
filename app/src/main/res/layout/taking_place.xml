@@ -21,16 +21,37 @@
 
         <ImageView
             android:layout_gravity="center_horizontal"
-            android:layout_width="250px"
-            android:layout_height="250px"
+            android:layout_width="150px"
+            android:layout_height="150px"
             android:layout_marginTop="40px"
             android:src="@drawable/remaining"/>
+
+        <TextView
+            android:layout_marginTop="20px"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="24px"
+            android:fontFamily="@font/biryani_extralight"
+            android:text="Blok Parkir"/>
+
+        <TextView
+            android:id="@+id/tv_blok_tp"
+            android:layout_marginTop="20px"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FFFFFF"
+            android:textSize="24px"
+            android:fontFamily="@font/biryani_bold"
+            android:text="--"/>
 
         <LinearLayout
             android:layout_gravity="center_horizontal"
             android:layout_width="222px"
             android:layout_height="162px"
-            android:layout_marginTop="70px"
+            android:layout_marginTop="30px"
             android:background="@drawable/rounded_layout"
             android:orientation="vertical">
 
@@ -54,6 +75,17 @@
                 android:textColor="#FFFFFF"
                 android:text="--:--"/>
         </LinearLayout>
+
+        <TextView
+            android:layout_width="320px"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12.6px"
+            android:textAlignment="center"
+            android:textSize="20px"
+            android:fontFamily="@font/biryani_extralight"
+            android:textColor="#FFFFFF"
+            android:text="Segera tempati blok parkir sebelum sisa waktu habis"/>
 
     </LinearLayout>
 </RelativeLayout>

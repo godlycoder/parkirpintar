@@ -43,6 +43,7 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/iv_user"
                 android:layout_toRightOf="@+id/count_info_layout"
                 android:layout_marginLeft="56px"
                 android:layout_width="142px"

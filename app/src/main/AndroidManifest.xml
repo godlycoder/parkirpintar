@@ -39,8 +39,10 @@
         <service
             android:name=".CountertService"
             android:enabled="true"
-            android:exported="true"/>
+            android:exported="true" />
 
+        <activity android:name=".feature.BridgeActivity" />
+        <activity android:name=".feature.landing.LandingActivity"></activity>
     </application>
 
 </manifest>

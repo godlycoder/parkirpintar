@@ -21,12 +21,33 @@
             android:fontFamily="@font/biryani_extralight"
             android:text="KENDARAAN TERPARKIR"/>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="18px"
+            android:fontFamily="@font/biryani_bold"
+            android:text="Blok"/>
+
+        <TextView
+            android:id="@+id/tv_blok_parked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="26px"
+            android:fontFamily="@font/biryani_bold"
+            android:text="--"/>
+
         <ImageView
             android:layout_gravity="center_horizontal"
             android:layout_width="206.5px"
-            android:layout_height="166px"
-            android:layout_marginTop="40px"
+            android:layout_height="100px"
+            android:layout_marginTop="20px"
             android:src="@drawable/parked"/>
+
+
 
         <LinearLayout
             android:layout_gravity="center_horizontal"
@@ -41,7 +62,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="12.6px"
-                android:textSize="22px"
+                android:textSize="26px"
                 android:fontFamily="@font/biryani_bold"
                 android:textColor="#FFFFFF"
                 android:text="Masuk"/>
@@ -51,7 +72,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:textSize="16px"
+                android:textSize="24px"
                 android:fontFamily="@font/biryani_extralight"
                 android:textColor="#FFFFFF"
                 android:text="--:--"/>
@@ -71,7 +92,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12.6px"
                 android:layout_gravity="center_horizontal"
-                android:textSize="16px"
+                android:textSize="24px"
                 android:fontFamily="@font/biryani_extralight"
                 android:textColor="#FFFFFF"
                 android:text="--"/>
@@ -82,7 +103,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="25px"
             android:layout_gravity="center_horizontal"
-            android:textSize="16px"
+            android:textSize="22px"
             android:fontFamily="@font/biryani_extralight"
             android:textColor="#FFFFFF"
             android:textAlignment="center"

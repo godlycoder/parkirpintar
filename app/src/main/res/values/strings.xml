@@ -4,8 +4,21 @@
     <string name="time_prompt">Pilih lama reservasi</string>
     <string name="note_parked">Layanan parkir akan berakhir jika kendaraan keluar dari blok parkir</string>
     <string name="note_not_park">Anda belum menempati tempat parkir. Coba cari tempat parkir kembali</string>
+    <string name="taking_place_content_title">Sisa Waktu Menempati</string>
+    <string name="reserved_content_title">Sisa Waktu Reservasi</string>
+    <string name="reserved_toast_info">Silahkan tunggu hingga blok parkir tersedia</string>
+    <string name="reserve_no_fill_toast_msg">Keterangan reservasi harus diisi semua</string>
+    <string name="signup_fail_msg">Gagal daftar. Coba lagi!</string>
+    <string name="login_fail_msg">Email atau password salah!</string>
+    <string name="database_error_msg">Database Eror</string>
+    <string name="parked_info_notif">Lama Kendaraan Terparkir</string>
+    <string name="no_ref_error">Nomer Referensi tidak terdaftar</string>
+    <string name="rer_used_msg">Nomer Referensi sudah digunakan akun lain</string>
+    <string name="empty_form_msg">Salah satu idak boleh kosong</string>
+    <string name="payment_info">Layanan akan berakhir setelah pembayaran anda terkonfirmasi</string>
 
     <string-array name="time_array">
+        <item>---</item>
         <item>30 Menit</item>
         <item>1 Jam</item>
         <item>2 Jam</item>

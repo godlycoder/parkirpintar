@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/head_color"
-    tools:context=".feature.SplashActivity">
+    tools:context=".feature.landing.LandingActivity">
 
-
-    <ImageView
-        android:layout_width="150px"
-        android:layout_height="150px"
-        android:layout_centerInParent="true"
-        android:src="@drawable/park"/>
+    <include
+        layout="@layout/login_layout"
+        android:visibility="visible"/>
+    <include
+        layout="@layout/signup_layout"
+        android:visibility="gone"/>
 
 </RelativeLayout>
